@@ -68,21 +68,29 @@ namespace ExpenseManager
         // --- Navigation Button Clicks ---
         private void btnAddTransaction_Click(object sender, EventArgs e)
         {
-            
+            AddTransactionForm addForm = new AddTransactionForm();
+            addForm.ShowDialog(); 
         }
 
         private void btnViewTransactions_Click(object sender, EventArgs e)
         {
-           
+            ViewTransactionsForm viewForm = new ViewTransactionsForm();
+            viewForm.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            
+            login loginForm = new login();
+            loginForm.Show();
+            this.Close();
         }
         private void btnManageCategories_Click(object sender, EventArgs e)
         {
-            
+            ManageCategoriesForm manageCategoriesForm = new ManageCategoriesForm();
+
+            manageCategoriesForm.ShowDialog();
+
+            LoadDashboardData();
         }
     }
 }
