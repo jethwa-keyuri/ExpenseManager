@@ -38,7 +38,7 @@ namespace ExpenseManager
             if (userId != -1)
             {
                 // If login is successful, open the dashboard and pass the UserID
-                DashboardForm dashboard = new DashboardForm();
+                DashboardForm dashboard = new DashboardForm(userId);
                 dashboard.Show();
                 this.Hide(); 
             }
