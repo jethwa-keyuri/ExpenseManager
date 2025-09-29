@@ -102,7 +102,8 @@ namespace ExpenseManager
         // --- Navigation Button Clicks ---
         private void btnAddTransaction_Click(object sender, EventArgs e)
         {
-            AddTransactionForm addForm = new AddTransactionForm();
+            AddTransactionForm addform1=new AddTransactionForm(currentUserID,this);
+            AddTransactionForm addForm = new AddTransactionForm(currentUserID, this);
             addForm.ShowDialog(); 
         }
 
