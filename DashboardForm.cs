@@ -109,7 +109,7 @@ namespace ExpenseManager
 
         private void btnViewTransactions_Click(object sender, EventArgs e)
         {
-            ViewTransactionsForm viewForm = new ViewTransactionsForm();
+            ViewTransactionsForm viewForm = new ViewTransactionsForm(currentUserID);
             viewForm.Show();
         }
 
