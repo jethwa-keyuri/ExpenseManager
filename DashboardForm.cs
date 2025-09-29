@@ -61,10 +61,44 @@ namespace ExpenseManager
             lblBalance.Text = $"{balance:C}";
             lblBalance.ForeColor = balance >= 0 ? Color.Green : Color.Red;
 
-            
+            LoadExpenseChart();
+        }
+        private void LoadExpenseChart()
+        {
+            chartExpenses.Series.Clear();
+            Series series = new Series
+            {
+                Name = "Expenses",
+                IsVisibleInLegend = true,
+                ChartType = SeriesChartType.Pie
+            };
+            chartExpenses.Series.Add(series);
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"SELECT C.CategoryName, SUM(T.Amount) as Total 
+                                 FROM Transactions T 
+                                 JOIN Categories C ON T.CategoryID = C.CategoryID 
+                                 WHERE T.UserID = @UserID AND T.TransactionType = 'Expense' 
+                                 GROUP BY C.CategoryName";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@UserID", currentUserID);
+                    con.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            series.Points.AddXY(reader["CategoryName"].ToString(), reader["Total"]);
+                        }
+                    }
+                    con.Close();
+                }
+            }
+            chartExpenses.Invalidate();
         }
 
-    
+
         // --- Navigation Button Clicks ---
         private void btnAddTransaction_Click(object sender, EventArgs e)
         {
