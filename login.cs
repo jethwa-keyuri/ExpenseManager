@@ -40,11 +40,11 @@ namespace ExpenseManager
                 // If login is successful, open the dashboard and pass the UserID
                 DashboardForm dashboard = new DashboardForm();
                 dashboard.Show();
-                this.Hide(); // Hide the login form
+                this.Hide(); 
             }
             else
             {
-                MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid username or password. Please enter valid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

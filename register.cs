@@ -21,13 +21,9 @@ namespace ExpenseManager
         }
         private void linkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Create an instance of the LoginForm
+
             login loginForm = new login();
-
-            // Show the login form
             loginForm.Show();
-
-            // Close the current register form
             this.Close();
         }
         private void btnRegister_Click(object sender, EventArgs e)
