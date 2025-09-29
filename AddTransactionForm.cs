@@ -10,13 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Demo
+namespace ExpenseManager
 {
     public partial class AddTransactionForm : Form
     {
         private int currentUserID;
         private DashboardForm dashboard; // Reference to the dashboard to refresh it
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\.NET\Demo\Database1.mdf;Integrated Security=True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\.NET\ExpenseManager\Database1.mdf;Integrated Security=True";
 
         public AddTransactionForm(int userId, DashboardForm dash)
         {

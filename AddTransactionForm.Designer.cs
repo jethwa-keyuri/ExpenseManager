@@ -1,4 +1,4 @@
-﻿namespace Demo
+﻿namespace ExpenseManager
 {
     partial class AddTransactionForm
     {
