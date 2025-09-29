@@ -102,6 +102,9 @@
     <Compile Include="ViewTransactionsForm.Designer.cs">
       <DependentUpon>ViewTransactionsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddTransactionForm.resx">
+      <DependentUpon>AddTransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
