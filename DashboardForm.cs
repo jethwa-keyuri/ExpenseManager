@@ -121,7 +121,7 @@ namespace ExpenseManager
         }
         private void btnManageCategories_Click(object sender, EventArgs e)
         {
-            ManageCategoriesForm manageCategoriesForm = new ManageCategoriesForm();
+            ManageCategoriesForm manageCategoriesForm = new ManageCategoriesForm(currentUserID);
 
             manageCategoriesForm.ShowDialog();
 
