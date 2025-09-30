@@ -96,6 +96,7 @@ namespace ExpenseManager
 
                     // Refresh the grid to show the change
                     LoadTransactions();
+                   
                 }
                 catch (Exception ex)
                 {

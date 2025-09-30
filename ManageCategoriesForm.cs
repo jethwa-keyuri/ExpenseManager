@@ -13,7 +13,7 @@ namespace ExpenseManager
 {
     public partial class ManageCategoriesForm : Form
     {
-        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\.NET\Demo\Database1.mdf;Integrated Security=True";
+        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\.NET\ExpenseManager\Database1.mdf;Integrated Security=True";
         private readonly int currentUserId;
 
         public ManageCategoriesForm(int userId)

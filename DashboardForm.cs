@@ -111,6 +111,7 @@ namespace ExpenseManager
         {
             ViewTransactionsForm viewForm = new ViewTransactionsForm(currentUserID);
             viewForm.Show();
+            LoadDashboardData();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
