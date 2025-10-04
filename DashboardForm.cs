@@ -14,6 +14,7 @@ namespace ExpenseManager
 {
     public partial class DashboardForm : Form
     {
+        
         private int currentUserID;
         private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\.NET\ExpenseManager\Database1.mdf;Integrated Security=True";
 
