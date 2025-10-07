@@ -55,8 +55,9 @@
             this.panelNav.Controls.Add(this.label1);
             this.panelNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelNav.Location = new System.Drawing.Point(0, 0);
+            this.panelNav.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(200, 661);
+            this.panelNav.Size = new System.Drawing.Size(267, 814);
             this.panelNav.TabIndex = 0;
             // 
             // btnLogout
@@ -67,10 +68,11 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(0, 621);
+            this.btnLogout.Location = new System.Drawing.Point(0, 765);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(200, 40);
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(267, 49);
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -85,10 +87,11 @@
             this.btnManageCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageCategories.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnManageCategories.ForeColor = System.Drawing.Color.White;
-            this.btnManageCategories.Location = new System.Drawing.Point(0, 120);
+            this.btnManageCategories.Location = new System.Drawing.Point(0, 147);
+            this.btnManageCategories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManageCategories.Name = "btnManageCategories";
-            this.btnManageCategories.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnManageCategories.Size = new System.Drawing.Size(200, 40);
+            this.btnManageCategories.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnManageCategories.Size = new System.Drawing.Size(267, 49);
             this.btnManageCategories.TabIndex = 3;
             this.btnManageCategories.Text = "Manage Categories";
             this.btnManageCategories.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,10 +106,11 @@
             this.btnViewTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewTransactions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnViewTransactions.ForeColor = System.Drawing.Color.White;
-            this.btnViewTransactions.Location = new System.Drawing.Point(0, 80);
+            this.btnViewTransactions.Location = new System.Drawing.Point(0, 98);
+            this.btnViewTransactions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnViewTransactions.Name = "btnViewTransactions";
-            this.btnViewTransactions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnViewTransactions.Size = new System.Drawing.Size(200, 40);
+            this.btnViewTransactions.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnViewTransactions.Size = new System.Drawing.Size(267, 49);
             this.btnViewTransactions.TabIndex = 2;
             this.btnViewTransactions.Text = "View Transactions";
             this.btnViewTransactions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,10 +125,11 @@
             this.btnAddTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddTransaction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnAddTransaction.ForeColor = System.Drawing.Color.White;
-            this.btnAddTransaction.Location = new System.Drawing.Point(0, 40);
+            this.btnAddTransaction.Location = new System.Drawing.Point(0, 49);
+            this.btnAddTransaction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddTransaction.Name = "btnAddTransaction";
-            this.btnAddTransaction.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAddTransaction.Size = new System.Drawing.Size(200, 40);
+            this.btnAddTransaction.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnAddTransaction.Size = new System.Drawing.Size(267, 49);
             this.btnAddTransaction.TabIndex = 1;
             this.btnAddTransaction.Text = "Add Transaction";
             this.btnAddTransaction.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -137,8 +142,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 40);
+            this.label1.Size = new System.Drawing.Size(267, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "Menu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -151,10 +157,11 @@
             this.panelMain.Controls.Add(this.panelExpense);
             this.panelMain.Controls.Add(this.panelIncome);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(200, 0);
+            this.panelMain.Location = new System.Drawing.Point(267, 0);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Padding = new System.Windows.Forms.Padding(20);
-            this.panelMain.Size = new System.Drawing.Size(884, 661);
+            this.panelMain.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.panelMain.Size = new System.Drawing.Size(1178, 814);
             this.panelMain.TabIndex = 1;
             // 
             // chartExpenses
@@ -164,34 +171,38 @@
             this.chartExpenses.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartExpenses.Legends.Add(legend1);
-            this.chartExpenses.Location = new System.Drawing.Point(23, 172);
+            this.chartExpenses.Location = new System.Drawing.Point(31, 212);
+            this.chartExpenses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chartExpenses.Name = "chartExpenses";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Legend = "Legend1";
             series1.Name = "Expenses";
             this.chartExpenses.Series.Add(series1);
-            this.chartExpenses.Size = new System.Drawing.Size(838, 466);
+            this.chartExpenses.Size = new System.Drawing.Size(1117, 574);
             this.chartExpenses.TabIndex = 3;
             this.chartExpenses.Text = "chart1";
+            this.chartExpenses.Click += new System.EventHandler(this.chartExpenses_Click);
             // 
             // panelBalance
             // 
             this.panelBalance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.panelBalance.Controls.Add(this.lblBalance);
             this.panelBalance.Controls.Add(this.label4);
-            this.panelBalance.Location = new System.Drawing.Point(595, 23);
+            this.panelBalance.Location = new System.Drawing.Point(793, 28);
+            this.panelBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelBalance.Name = "panelBalance";
-            this.panelBalance.Size = new System.Drawing.Size(266, 129);
+            this.panelBalance.Size = new System.Drawing.Size(355, 159);
             this.panelBalance.TabIndex = 2;
             // 
             // lblBalance
             // 
             this.lblBalance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblBalance.Location = new System.Drawing.Point(3, 50);
+            this.lblBalance.Location = new System.Drawing.Point(4, 62);
+            this.lblBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(260, 59);
+            this.lblBalance.Size = new System.Drawing.Size(347, 73);
             this.lblBalance.TabIndex = 1;
             this.lblBalance.Text = "₹0.00";
             this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -201,9 +212,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(15, 14);
+            this.label4.Location = new System.Drawing.Point(20, 17);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 25);
+            this.label4.Size = new System.Drawing.Size(102, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "Balance";
             // 
@@ -212,18 +224,20 @@
             this.panelExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.panelExpense.Controls.Add(this.lblTotalExpense);
             this.panelExpense.Controls.Add(this.label3);
-            this.panelExpense.Location = new System.Drawing.Point(309, 23);
+            this.panelExpense.Location = new System.Drawing.Point(412, 28);
+            this.panelExpense.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelExpense.Name = "panelExpense";
-            this.panelExpense.Size = new System.Drawing.Size(266, 129);
+            this.panelExpense.Size = new System.Drawing.Size(355, 159);
             this.panelExpense.TabIndex = 1;
             // 
             // lblTotalExpense
             // 
             this.lblTotalExpense.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalExpense.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTotalExpense.Location = new System.Drawing.Point(3, 50);
+            this.lblTotalExpense.Location = new System.Drawing.Point(4, 62);
+            this.lblTotalExpense.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalExpense.Name = "lblTotalExpense";
-            this.lblTotalExpense.Size = new System.Drawing.Size(260, 59);
+            this.lblTotalExpense.Size = new System.Drawing.Size(347, 73);
             this.lblTotalExpense.TabIndex = 1;
             this.lblTotalExpense.Text = "₹0.00";
             this.lblTotalExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,9 +247,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(15, 14);
+            this.label3.Location = new System.Drawing.Point(20, 17);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 25);
+            this.label3.Size = new System.Drawing.Size(170, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Total Expense";
             // 
@@ -244,18 +259,20 @@
             this.panelIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.panelIncome.Controls.Add(this.lblTotalIncome);
             this.panelIncome.Controls.Add(this.label2);
-            this.panelIncome.Location = new System.Drawing.Point(23, 23);
+            this.panelIncome.Location = new System.Drawing.Point(31, 28);
+            this.panelIncome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelIncome.Name = "panelIncome";
-            this.panelIncome.Size = new System.Drawing.Size(266, 129);
+            this.panelIncome.Size = new System.Drawing.Size(355, 159);
             this.panelIncome.TabIndex = 0;
             // 
             // lblTotalIncome
             // 
             this.lblTotalIncome.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalIncome.ForeColor = System.Drawing.Color.White;
-            this.lblTotalIncome.Location = new System.Drawing.Point(3, 50);
+            this.lblTotalIncome.Location = new System.Drawing.Point(4, 62);
+            this.lblTotalIncome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalIncome.Name = "lblTotalIncome";
-            this.lblTotalIncome.Size = new System.Drawing.Size(260, 59);
+            this.lblTotalIncome.Size = new System.Drawing.Size(347, 73);
             this.lblTotalIncome.TabIndex = 1;
             this.lblTotalIncome.Text = "₹0.00";
             this.lblTotalIncome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -265,19 +282,21 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(15, 14);
+            this.label2.Location = new System.Drawing.Point(20, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 25);
+            this.label2.Size = new System.Drawing.Size(162, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Total Income";
             // 
             // DashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.ClientSize = new System.Drawing.Size(1445, 814);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelNav);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expense Manager Dashboard";

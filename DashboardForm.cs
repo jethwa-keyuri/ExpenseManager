@@ -22,13 +22,16 @@ namespace ExpenseManager
         {
             InitializeComponent();
             currentUserID = userId;
+            this.Shown += DashboardForm_Shown;
         }
 
-        private void DashboardForm_Load(object sender, EventArgs e)
+        
+
+        private void DashboardForm_Shown(object sender, EventArgs e)
         {
+            
             LoadDashboardData();
         }
-
         public void LoadDashboardData()
         {
             decimal totalIncome = 0;
@@ -55,8 +58,8 @@ namespace ExpenseManager
                 }
             }
 
-            // Update UI Labels
-            lblTotalIncome.Text = $"{totalIncome:C}"; // Currency format
+            
+            lblTotalIncome.Text = $"{totalIncome:C}"; 
             lblTotalExpense.Text = $"{totalExpense:C}";
             decimal balance = totalIncome - totalExpense;
             lblBalance.Text = $"{balance:C}";
@@ -128,6 +131,11 @@ namespace ExpenseManager
             manageCategoriesForm.ShowDialog();
 
             LoadDashboardData();
+        }
+
+        private void chartExpenses_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
