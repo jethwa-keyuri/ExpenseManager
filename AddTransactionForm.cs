@@ -15,7 +15,7 @@ namespace ExpenseManager
     public partial class AddTransactionForm : Form
     {
         private int currentUserID;
-        private DashboardForm dashboard; // Reference to the dashboard to refresh it
+        private DashboardForm dashboard;
         private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\.NET\ExpenseManager\Database1.mdf;Integrated Security=True";
 
         public AddTransactionForm(int userId, DashboardForm dash)
@@ -27,7 +27,6 @@ namespace ExpenseManager
 
         private void AddTransactionForm_Load(object sender, EventArgs e)
         {
-            // Set default transaction type and load categories
             radioExpense.Checked = true;
             LoadCategories("Expense");
         }
@@ -65,7 +64,7 @@ namespace ExpenseManager
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // --- Validation ---
+            
             if (string.IsNullOrWhiteSpace(txtTitle.Text) || comboCategory.SelectedValue == null)
             {
                 MessageBox.Show("Title and Category are required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -77,7 +76,6 @@ namespace ExpenseManager
                 return;
             }
 
-            // --- Save to Database ---
             string transactionType = radioIncome.Checked ? "Income" : "Expense";
             using (SqlConnection con = new SqlConnection(connectionString))
             {

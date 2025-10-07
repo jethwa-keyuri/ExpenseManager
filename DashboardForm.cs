@@ -29,9 +29,10 @@ namespace ExpenseManager
 
         private void DashboardForm_Shown(object sender, EventArgs e)
         {
-            
             LoadDashboardData();
         }
+
+        //Dashboaard Data Load
         public void LoadDashboardData()
         {
             decimal totalIncome = 0;

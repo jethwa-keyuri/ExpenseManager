@@ -47,24 +47,22 @@ namespace ExpenseManager
             }
         }
 
-        // --- NEW DELETE OPERATION LOGIC ---
+        // Delete Transaction Logic
         private void btnDeleteTransaction_Click(object sender, EventArgs e)
         {
-            // Ensure a row is selected in the DataGridView
             if (dgvTransactions.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a transaction to delete.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
-            // Confirm with the user before deleting
             DialogResult confirmation = MessageBox.Show("Are you sure you want to delete this transaction? This action cannot be undone.", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (confirmation == DialogResult.Yes)
             {
                 try
                 {
-                    // --- MODIFIED AND SAFER CODE TO GET TRANSACTION ID ---
+                  
                     object transactionIdValue = dgvTransactions.SelectedRows[0].Cells["TransactionID"].Value;
 
                     if (transactionIdValue == null || transactionIdValue == DBNull.Value)
@@ -78,7 +76,6 @@ namespace ExpenseManager
                         MessageBox.Show("Invalid Transaction ID format.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-                    // --- END OF MODIFIED CODE ---
 
                     using (SqlConnection con = new SqlConnection(connectionString))
                     {
@@ -94,7 +91,7 @@ namespace ExpenseManager
 
                     MessageBox.Show("Transaction deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Refresh the grid to show the change
+                    // Refresh transactions
                     LoadTransactions();
                    
                 }

@@ -21,10 +21,7 @@ namespace ExpenseManager
             InitializeComponent();
             this.currentUserId = userId;
 
-            // --- THIS IS THE FIX ---
-            // This line connects the form's Load event to your method.
             this.Load += new System.EventHandler(this.ManageCategoriesForm_Load);
-            // --- END OF FIX ---
         }
 
         private void ManageCategoriesForm_Load(object sender, EventArgs e)
@@ -111,8 +108,6 @@ namespace ExpenseManager
                     using (SqlConnection con = new SqlConnection(connectionString))
                     {
                         con.Open();
-                        // Note: A more robust application might prevent deleting categories that are in use.
-                        // For this project, we will allow it, but show a warning.
                         string query = "DELETE FROM Categories WHERE CategoryID = @CategoryID AND UserID = @UserID";
                         using (SqlCommand cmd = new SqlCommand(query, con))
                         {
